@@ -26,3 +26,8 @@ about 25 times faster! However, as the array sizes got smaller, so did the time 
 two functions, and for the smallest and tiny array the insert function ran faster. Overall, the append function 
 scales better because the time difference is much greater for larger sized arrays, and the time difference for
 smaller arrays is minimal.
+
+EC: the doublerInsert function is slower because the unshift method it adds to the start and will need to reallocate
+memory and shift it so that it can add to the beginning of the array, while the push method (in doublerAppend function)
+rarely needs to copy over memory and can just push memory to the end of the array, therefore making it more effective
+and quicker.

@@ -1,0 +1,28 @@
+Timing Results:
+
+extraLargeArray: 
+-The function doublerInsert ran at 1.123 seconds
+-The function doublerAppend ran at 4.487 milliseconds
+
+largeArray:
+-doublerInsert ran at 12.588 milliseconds
+-doublerAppend ran at 932.2 microseconds
+
+mediumArray:
+-doublerInsert ran at 171.7 microseconds
+-doublerAppend ran at 149.9 microseconds
+
+smallArray:
+-doublerInsert ran at 79.3 microseconds
+-doublerAppend ran at 129.1 microseconds
+
+tinyArray:
+-doublerInsert ran at 57.5 microseconds
+-doublerAppend ran at 135.7 microseconds
+
+Explanation:
+For the larger arrays, the append function ran much faster. In the extraLargeArray specifically, it ran
+about 25 times faster! However, as the array sizes got smaller, so did the time difference between the
+two functions, and for the smallest and tiny array the insert function ran faster. Overall, the append function 
+scales better because the time difference is much greater for larger sized arrays, and the time difference for
+smaller arrays is minimal.
